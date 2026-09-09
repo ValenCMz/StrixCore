@@ -1,9 +1,4 @@
-import {
-  MonitorSmartphone,
-  ShoppingCart,
-  Boxes,
-  Zap,
-} from "lucide-react";
+import { MonitorSmartphone, ShoppingCart, Boxes, Zap } from "lucide-react";
 import Reveal from "./Reveal";
 
 const services = [
@@ -55,9 +50,6 @@ export default function Services() {
             <Reveal key={s.title} delay={i * 100}>
               <div className="service-card rounded-3xl border border-[var(--line)] bg-white p-10">
                 <div className="before:pointer-events-none before:absolute before:right-[-40px] before:top-[-40px] before:h-[140px] before:w-[140px] before:rounded-full before:bg-[radial-gradient(circle,rgba(147,66,255,0.12),transparent_70%)]">
-                  <div className="h-display text-lg text-[var(--violet)]">
-                    {String(i + 1).padStart(2, "0")}
-                  </div>
                   <div className="my-[22px] grid h-[58px] w-[58px] place-items-center rounded-2xl bg-[var(--lavender-soft)] text-[var(--violet)]">
                     <s.icon size={28} strokeWidth={1.7} />
                   </div>
