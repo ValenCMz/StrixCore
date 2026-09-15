@@ -57,7 +57,7 @@ body {
 }
 
 .container-x {
-  width: min(1200px, 100% - 48px);
+  width: min(1200px, 100% - 40px);
   margin-inline: auto;
 }
 
@@ -279,6 +279,12 @@ body {
 }
 .member-img {
   transition: transform 0.5s var(--ease);
+}
+
+@media (max-width: 480px) {
+  .container-x {
+    width: min(1200px, 100% - 32px);
+  }
 }
 
 @media (max-width: 960px) {

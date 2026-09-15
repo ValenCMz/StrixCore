@@ -39,7 +39,7 @@ export default function Navbar() {
           </span>
         </a>
 
-        <ul className="hidden gap-[34px] md:flex">
+        <ul className="hidden gap-[28px] lg:flex">
           {links.map((l) => (
             <li key={l.href}>
               <a
@@ -53,7 +53,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <a
             href="#contacto"
             className="btn btn-primary px-6 py-3 text-sm"
@@ -63,7 +63,7 @@ export default function Navbar() {
         </div>
 
         <button
-          className="text-[var(--ink)] md:hidden"
+          className="text-[var(--ink)] lg:hidden"
           onClick={() => setOpen(!open)}
           aria-label="Menú"
         >
@@ -77,7 +77,7 @@ export default function Navbar() {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="overflow-hidden border-t border-[var(--line)] bg-[var(--bg)] md:hidden"
+            className="overflow-hidden border-t border-[var(--line)] bg-[var(--bg)] lg:hidden"
           >
             <div className="flex flex-col px-6 py-4">
               {links.map((l) => (

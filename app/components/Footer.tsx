@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#0f0a17] py-[70px] text-[rgba(243,239,255,0.7)]">
       <div className="container-x">
-        <div className="grid gap-11 border-b border-[var(--line-night)] pb-[50px] md:grid-cols-[2fr_1fr_1fr]">
+        <div className="grid gap-8 border-b border-[var(--line-night)] pb-[50px] md:grid-cols-[2fr_1fr_1fr] md:gap-11">
           <div>
             <a href="#inicio" className="flex items-center gap-[11px]">
               <Image
@@ -68,7 +68,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:strixcore1@gmail.com"
-                  className="text-[15px] transition-colors hover:text-[var(--violet-2)]"
+                  className="text-[15px] transition-colors hover:text-[var(--violet-2)] [overflow-wrap:anywhere]"
                 >
                   strixcore1@gmail.com
                 </a>

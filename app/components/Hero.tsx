@@ -110,12 +110,12 @@ export default function Hero() {
   return (
     <header
       id="inicio"
-      className="relative overflow-hidden pb-[100px] pt-[160px]"
+      className="relative overflow-hidden pb-[100px] pt-[120px] md:pt-[160px]"
     >
       <div className="pointer-events-none absolute right-[-10%] top-[-20%] h-[700px] w-[700px] bg-[radial-gradient(circle,rgba(147,66,255,0.14),transparent_62%)]" />
       <div className="pointer-events-none absolute bottom-[-30%] left-[-12%] h-[560px] w-[560px] bg-[radial-gradient(circle,rgba(164,100,246,0.12),transparent_60%)]" />
 
-      <div className="container-x grid items-center gap-[60px] md:grid-cols-[1.05fr_0.95fr]">
+      <div className="container-x grid items-center gap-[44px] md:grid-cols-[1.05fr_0.95fr] md:gap-[60px]">
         <div>
           <Reveal delay={100}>
             <h1 className="h-display my-[26px] text-[clamp(2.9rem,6.5vw,5.4rem)]">
@@ -154,8 +154,8 @@ export default function Hero() {
               </span>
             </div>
 
-            <div className="flex min-h-[350px] px-0 py-[22px] font-mono text-[13.5px] leading-[1.75]">
-              <div className="w-[52px] shrink-0 select-none pr-4 text-right text-[#443c4f]">
+            <div className="flex min-h-[350px] px-0 py-[22px] font-mono text-[12.5px] leading-[1.75] sm:text-[13.5px]">
+              <div className="w-[44px] shrink-0 select-none pr-4 text-right text-[#443c4f]">
                 {codeLines.map((_, idx) => (
                   <div key={idx} className="min-h-[1.75em]">
                     {idx < lineCount && codeLines[idx].parts.length > 0

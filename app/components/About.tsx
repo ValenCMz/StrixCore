@@ -25,7 +25,7 @@ export default function About() {
   return (
     <section id="nosotros" className="section">
       <div className="container-x">
-        <div className="grid items-center gap-[60px] md:grid-cols-[0.9fr_1.1fr]">
+        <div className="grid items-center gap-[44px] md:grid-cols-[0.9fr_1.1fr] md:gap-[60px]">
           <Reveal>
             <div>
               <div className="eyebrow">Quiénes somos</div>

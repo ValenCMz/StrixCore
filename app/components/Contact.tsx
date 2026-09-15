@@ -14,7 +14,7 @@ export default function Contact() {
   return (
     <section id="contacto" className="section bg-[var(--night)] text-[#f3efff]">
       <div className="container-x">
-        <div className="grid items-start gap-[60px] md:grid-cols-2">
+        <div className="grid items-start gap-[44px] md:grid-cols-2 md:gap-[60px]">
           <Reveal>
             <div>
               <div className="eyebrow" style={{ color: "var(--violet-2)" }}>
@@ -52,12 +52,12 @@ export default function Contact() {
                 </a>
                 <a
                   href="mailto:strixcore1@gmail.com"
-                  className="flex items-center gap-[14px] font-medium text-[rgba(243,239,255,0.85)]"
+                  className="flex min-w-0 items-center gap-[14px] font-medium text-[rgba(243,239,255,0.85)]"
                 >
                   <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-[rgba(147,66,255,0.16)] text-[var(--violet-2)]">
                     <Mail size={20} strokeWidth={1.7} />
                   </span>
-                  strixcore1@gmail.com
+                  <span className="min-w-0 break-words">strixcore1@gmail.com</span>
                 </a>
                 <span className="flex items-center gap-[14px] font-medium text-[rgba(243,239,255,0.85)]">
                   <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-[rgba(147,66,255,0.16)] text-[var(--violet-2)]">
@@ -70,7 +70,7 @@ export default function Contact() {
           </Reveal>
 
           <Reveal delay={100}>
-            <div className="rounded-[28px] border border-[var(--line-night)] bg-[var(--night-2)] p-11">
+            <div className="rounded-[28px] border border-[var(--line-night)] bg-[var(--night-2)] p-6 sm:p-11">
               <form
                 className="flex flex-col gap-5"
                 onSubmit={async (e) => {

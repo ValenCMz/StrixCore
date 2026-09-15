@@ -46,7 +46,7 @@ export default function Projects() {
         {projects.map((p) => (
           <div
             key={p.idx}
-            className="project mb-[90px] grid items-center gap-[56px] last:mb-0 md:grid-cols-[1.1fr_0.9fr]"
+            className="project mb-[56px] grid items-center gap-[40px] last:mb-0 md:mb-[90px] md:grid-cols-[1.1fr_0.9fr] md:gap-[56px]"
           >
             <div className={p.flip ? "order-2" : ""}>
               <div className="relative overflow-hidden rounded-3xl shadow-[0_30px_70px_-30px_rgba(0,0,0,0.6)]">
