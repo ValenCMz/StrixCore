@@ -8,5 +8,5 @@ export default function imageLoader({
   if (src.startsWith("http") || src.startsWith("data:")) {
     return src;
   }
-  return `/StrixCore${src}`;
+  return src;
 }
