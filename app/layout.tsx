@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import {
   Cactus_Classical_Serif,
   Plus_Jakarta_Sans,
@@ -37,6 +38,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-TQ8TMXNJ6H"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TQ8TMXNJ6H');
+        `}
+      </Script>
       <body
         className={`${serif.variable} ${sans.variable} ${mono.variable} antialiased`}
       >
